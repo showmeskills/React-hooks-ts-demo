@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    width:1200px;
+    height:1000px;
+    margin:auto;
+    overflow:hidden;
+    .SyncTodos{
+        width:500px;
+        height:500px;
+        text-align:center;
+        margin:auto;
+        .todo_header{
+            margin-top:20px;
+        }
+        .todos_list_containers{
+            margin-top:20px;
+            .todos_list_wrapper{
+                list-style: none;
+                li{
+                    width:100%;
+                    height:30px;
+                    font-size:25px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
