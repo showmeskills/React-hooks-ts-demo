@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        页面无内容
+    </div>
+    <button id="btn">加载js</button>
+    <script type="text/javascript">
+        document.getElementById("btn").onclick = function(){
+            import('./test.js').then(d=>{
+                d.test()
+            })
+        };
+    </script>
+</body>
+</html>
